@@ -84,10 +84,15 @@ class MainActivity : AppCompatActivity() {
             try {
                 num1 = edit1.text.toString()
                 num2 = edit2.text.toString()
-                result = Integer.parseInt(num1) / Integer.parseInt(num2)
-                textResult.text = "계산 결과 : " + result.toString()
-                click = click + 1;
-                title = click.toString() + "회 계산기"
+                try {
+                    result = Integer.parseInt(num1) / Integer.parseInt(num2)
+                    textResult.text = "계산 결과 : " + result.toString()
+                    click = click + 1;
+                    title = click.toString() + "회 계산기"
+                }
+                catch (e:ArithmeticException){
+                    println("Divided_by_Zero_Exception")
+                }
             }
             catch (e:NumberFormatException){
                 println("failed")
@@ -99,10 +104,15 @@ class MainActivity : AppCompatActivity() {
             try{
                 num1 = edit1.text.toString()
                 num2 = edit2.text.toString()
-                result = Integer.parseInt(num1) % Integer.parseInt(num2)
-                textResult.text= "계산 결과 : " + result.toString()
-                click = click + 1;
-                title = click.toString() + "회 계산기"
+                try {
+                    result = Integer.parseInt(num1) % Integer.parseInt(num2)
+                    textResult.text = "계산 결과 : " + result.toString()
+                    click = click + 1;
+                    title = click.toString() + "회 계산기"
+                }
+                catch (e:ArithmeticException){
+                    println("Divided_by_Zero_Exception")
+                }
             }
             catch (e:NumberFormatException){
                 println("failed")
