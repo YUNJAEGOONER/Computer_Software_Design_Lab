@@ -1,8 +1,6 @@
-# Computer_Software_Design_Lab
+# Make_Calculatoe
 Android Programming
-
 ![20230407_203553_7](https://user-images.githubusercontent.com/50546745/230602906-e6c23104-bdbc-44af-97d1-517af1eb8a03.png)
-
 
 ## 나눗셈 연산과 나머지 연산의 경우 나누는 수가 0인경우 예외처리가 필요 -> 강제종료발생
 
